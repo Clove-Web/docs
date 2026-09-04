@@ -1,0 +1,5 @@
+﻿# Welcome
+
+> ✅ Your website is working.
+
+- [Welcome](https://docs.example.com/): Welcome
