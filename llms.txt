@@ -1,5 +1,3 @@
-﻿# Welcome
+﻿#  | Doughmination Docs
 
-> ✅ Your website is working.
-
-- [Welcome](https://docs.example.com/): Welcome
+- [Index](https://docs.doughmination.gay/index.md): Index
