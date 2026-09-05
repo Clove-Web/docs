@@ -18,6 +18,6 @@ This is a known issue, and I'm actively trying to find a way to make loading eas
 
 Doughmination Music is currently running from a single laptop, so the initial connection can sometimes take a little while to wake up.
 
-**Workaround:** Play *Rwar x3* by Idfk who first. It's only 57 seconds long, and playing it appears to warm up the connection. Once it starts playing, other songs generally load much faster.
+**Workaround:** Play "*Rwar x3*" by Idfk who first. It's only 57 seconds long, and playing it appears to warm up the connection. Once it starts playing, other songs generally load much faster.
 
 I have no idea why this works, but it works.
