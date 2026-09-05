@@ -16,6 +16,7 @@ A badge is given by pkviewer. You cannot set one on yourself, and neither can an
 | | |
 |---|---|
 | **Owner** | Runs pkviewer. |
+| **PK Dev** | Works on PluralKit itself. |
 | **Girlfriend** | The owner's girlfriend. |
 | **Friend** | A friend of the project. |
 | **Bug Hunter** | Found and reported a bug. |
@@ -23,6 +24,10 @@ A badge is given by pkviewer. You cannot set one on yourself, and neither can an
 | **Contributor** | Contributed to pkviewer. |
 
 More can be added over time. The current list is always on [pkviewer.xyz/badges](https://pkviewer.xyz/badges).
+
+!!!warning
+The **PK Dev** badge recognises someone who works on PluralKit. It is pkviewer's way of saying who they are — it is not a statement by PluralKit, and it does not mean PluralKit is involved in pkviewer. pkviewer remains an independent third-party project, not affiliated with or endorsed by PluralKit.
+!!!
 
 ### You decide whether it shows
 
@@ -35,6 +40,8 @@ That is deliberate. A badge says something about you to everyone who visits your
 - **Hide** one you accepted earlier. A hidden badge looks exactly like one that was never given; nobody can tell there is something to ask about.
 
 You will find these on your system's management page.
+
+**PK Dev is the one exception.** It appears without waiting, and it can be given to a PluralKit developer who has no pkviewer account at all — otherwise it would be a badge that never shows, and being recognised would mean signing up to a third-party site first. It is still yours to remove: claim your system and Decline works exactly as it does for any other badge, or [ask](/faq) and it will be taken off. Every other badge waits for you.
 
 ### Why a badge cannot be faked
 
