@@ -32,7 +32,9 @@ Social links are shown as links and nothing else. pkviewer does not visit them, 
 
 ### Public pages
 
-Public pages need no account and set no login cookie. Signing in happens on a separate address from the one your public pages live on, so the session cannot reach them.
+Public pages need no account and set no login cookie, whether or not you happen to be signed in. A public page is built from public information only — it never contains your account, your Discord link, or anything about your session — so what a visitor sees is exactly what you see.
+
+pkviewer serves public pages, sign-in and management from one address. Nothing on a public page can execute: there is no custom JavaScript, no HTML you can write, and no free-form CSS. Appearance settings are a fixed list of validated choices, and social links are shown as links and never loaded.
 
 During the beta, pages are marked so search engines do not index them.
 

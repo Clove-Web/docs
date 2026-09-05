@@ -5,6 +5,8 @@ label: pkviewer
 
 pkviewer turns a [*PluralKit*](https://pluralkit.me) system into a website.
 
+**[pkviewer.xyz](https://pkviewer.xyz)**
+
 PluralKit holds the identity and the data. pkviewer decides how that identity is presented on the web: every system gets a public page, every member can have one, and systems that sign in can choose a readable address and change how their pages look.
 
 !!!warning
@@ -13,19 +15,21 @@ pkviewer is a third-party project. It is not PluralKit, and is not affiliated wi
 
 pkviewer is in **beta**. The feature set is deliberately small, and things will change.
 
+During the beta, claiming a system is limited to an allow-list, and pages ask search engines not to index them. Anyone can view a public page — that is not limited, and will not be.
+
 ### Addresses
 
 Every system is reachable by its PluralKit ID from the moment it is claimed:
 
 ```
-/s/abcdef
+https://pkviewer.xyz/s/abcdef
 ```
 
 Once a system chooses an address, that becomes the friendlier link. Both keep working, and the chosen one is canonical:
 
 ```
-/s/your-system
-/s/your-system/a-member
+https://pkviewer.xyz/s/your-system
+https://pkviewer.xyz/s/your-system/a-member
 ```
 
 A chosen address is never required for a page to be public. It only makes the link nicer to share.
@@ -41,6 +45,12 @@ You can hide public information on pkviewer if you would rather not show it — 
 Signing in uses Discord, and only to confirm who you are. pkviewer asks Discord for your account ID and username, nothing else: not your servers, not your messages, not your email.
 
 You never have to hand pkviewer a PluralKit token to claim a system. See [*Claiming a system*](/projects/pkviewer/claiming).
+
+### Getting started
+
+1. Sign in at [pkviewer.xyz/login](https://pkviewer.xyz/login) with Discord.
+2. Claim your system — usually automatic, see [*Claiming a system*](/projects/pkviewer/claiming).
+3. Choose an address and an appearance from [your management page](https://pkviewer.xyz/manage).
 
 ### Pages
 
