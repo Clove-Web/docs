@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.841923258973">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.841942540148">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../media/favicon.png" />
-    <link href="../../resources/css/retype.css?v=4.6.0.841923258973" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.841942540148" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.841923258973" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.841942540148" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.841923258973" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.841942540148" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -163,6 +163,7 @@
                 <!-- Page content  -->
 <h1 id="pkviewer">pkviewer</h1>
 <p>pkviewer turns a <a href="https://pluralkit.me"><em>PluralKit</em></a> system into a website.</p>
+<p><strong><a href="https://pkviewer.xyz">pkviewer.xyz</a></strong></p>
 <p>PluralKit holds the identity and the data. pkviewer decides how that identity is presented on the web: every system gets a public page, every member can have one, and systems that sign in can choose a readable address and change how their pages look.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
@@ -181,15 +182,16 @@
     </div>
 </div>
 <p>pkviewer is in <strong>beta</strong>. The feature set is deliberately small, and things will change.</p>
+<p>During the beta, claiming a system is limited to an allow-list, and pages ask search engines not to index them. Anyone can view a public page — that is not limited, and will not be.</p>
 <h3 id="addresses">Addresses</h3>
 <p>Every system is reachable by its PluralKit ID from the moment it is claimed:</p>
 <div id="addresses-code-1" class="codeblock-wrapper"><doc-codeblock line-numbers>
-<pre translate="no" class="language-none"><code v-pre class="language-none">/s/abcdef</code></pre>
+<pre translate="no" class="language-none"><code v-pre class="language-none">https://pkviewer.xyz/s/abcdef</code></pre>
 </doc-codeblock></div>
 <p>Once a system chooses an address, that becomes the friendlier link. Both keep working, and the chosen one is canonical:</p>
 <div id="addresses-code-2" class="codeblock-wrapper"><doc-codeblock line-numbers>
-<pre translate="no" class="language-none"><code v-pre class="language-none">/s/your-system
-/s/your-system/a-member</code></pre>
+<pre translate="no" class="language-none"><code v-pre class="language-none">https://pkviewer.xyz/s/your-system
+https://pkviewer.xyz/s/your-system/a-member</code></pre>
 </doc-codeblock></div>
 <p>A chosen address is never required for a page to be public. It only makes the link nicer to share.</p>
 <h3 id="what-is-public">What is public</h3>
@@ -198,6 +200,12 @@
 <h3 id="signing-in">Signing in</h3>
 <p>Signing in uses Discord, and only to confirm who you are. pkviewer asks Discord for your account ID and username, nothing else: not your servers, not your messages, not your email.</p>
 <p>You never have to hand pkviewer a PluralKit token to claim a system. See <a href="claiming/"><em>Claiming a system</em></a>.</p>
+<h3 id="getting-started">Getting started</h3>
+<ol>
+<li>Sign in at <a href="https://pkviewer.xyz/login">pkviewer.xyz/login</a> with Discord.</li>
+<li>Claim your system — usually automatic, see <a href="claiming/"><em>Claiming a system</em></a>.</li>
+<li>Choose an address and an appearance from <a href="https://pkviewer.xyz/manage">your management page</a>.</li>
+</ol>
 <h3 id="pages">Pages</h3>
 <ul>
 <li><a href="claiming/"><em>Claiming a system</em></a></li>

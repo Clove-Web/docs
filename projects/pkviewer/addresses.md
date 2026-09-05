@@ -1,14 +1,14 @@
 Every claimed system is public straight away, at its PluralKit ID:
 
 ```
-/s/abcdef
+https://pkviewer.xyz/s/abcdef
 ```
 
 Choosing an address gives it a friendlier link. The ID address keeps working afterwards, and always will.
 
 ```
-/s/your-system
-/s/your-system/a-member
+https://pkviewer.xyz/s/your-system
+https://pkviewer.xyz/s/your-system/a-member
 ```
 
 ### What an address can be
