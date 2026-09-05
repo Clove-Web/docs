@@ -1,27 +1,37 @@
 input: ./src
 output: .retype
 url: docs.doughmination.gay
+
+locale: en
+
 branding:
   title: Doughmination Docs
-  logo: /media/logo_circle.png
+  logo: /media/favicon.png
   logoAlign: left
   colors:
     label:
       text: "#ffffff"
-      background: "#9d00ff"
+      background: "#d64f9b"
+
 links:
   - text: Home
     link: index.md
     icon: home
+
 editor:
-  enabled: true
-favicon: /media/logo_circle.png
+  enabled: false
+
+favicon: /media/favicon.png
+
 generator:
   recase: all
+
 markdown:
   lineBreaks: soft
+
 meta:
   title: " | Doughmination Docs"
+
 search:
   hotkeys:
     - "/"
@@ -30,17 +40,34 @@ search:
   mode: full
   noResultsFoundMsg: "No results"
   placeholder: Search
+
 start:
   open: false
+  pro: true
+
 snippets:
   lineNumbers:
     - js
     - none
+
 templating:
   enabled: true
   liquid: false
+
 footer:
   copyright: "&copy; 2026 Clove Twilight - All Rights Reserved."
   links:
-    - text: doughmination
+    - text: GitHub
       link: https://github.com/doughmination
+
+backlinks:
+  enabled: false
+
+#theme:
+#  base:
+#    base-color: "#d64f9b"
+#    base-bg: "#fce7f3"
+
+#  dark:
+#    base-color: "#f5a6d0"
+#    base-bg: "#3b2633"
