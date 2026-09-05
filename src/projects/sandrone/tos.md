@@ -46,6 +46,3 @@ The bot's source code is released under the Doughmination Authorised Source Lice
 
 ### Governing law
 These terms are governed by the law of England and Wales.
-
-### Contact
-Questions go to the support [Discord server](https://discord.gg/N8gCjS294R), [Matrix](https://matrix.to/#/#doughmination:matrix.org) or as an issue on the [bot's repository](https://github.com/doughmination/sandrone).

@@ -162,4 +162,4 @@ Switch a command module off.
 
 ## Something missing?
 
-Commands come and go as the bot gets worked on. The [bot's repository](https://github.com/doughmination/sandrone) is the source of truth, and questions are welcome in the [support Discord server](https://discord.gg/N8gCjS294R).
+Commands come and go as the bot gets worked on. The [bot's repository](https://github.com/doughmination/sandrone) is the source of truth.
