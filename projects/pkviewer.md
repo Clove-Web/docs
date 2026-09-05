@@ -8,9 +8,7 @@ PluralKit holds the identity and the data. pkviewer decides how that identity is
 pkviewer is a third-party project. It is not PluralKit, and is not affiliated with or endorsed by the PluralKit project. It reads PluralKit's public API and shows only information PluralKit already makes public.
 !!!
 
-pkviewer is in **beta**. The feature set is deliberately small, and things will change.
-
-During the beta, claiming a system is limited to an allow-list, and pages ask search engines not to index them. Anyone can view a public page — that is not limited, and will not be.
+The feature set is deliberately small, and grows slowly on purpose.
 
 ### Addresses
 
@@ -52,4 +50,5 @@ You never have to hand pkviewer a PluralKit token to claim a system. See [*Claim
 - [*Claiming a system*](/projects/pkviewer/claiming)
 - [*Your public address*](/projects/pkviewer/addresses)
 - [*Appearance and layout*](/projects/pkviewer/appearance)
+- [*Badges*](/projects/pkviewer/badges)
 - [*Privacy*](/projects/pkviewer/privacy)

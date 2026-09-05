@@ -24,6 +24,6 @@ A PluralKit token is not read-only. It can change and delete members. pkviewer u
 
 A system that is already claimed will not be taken over automatically, even by someone who can prove they are linked to it. If a system needs to move between accounts, that is handled by hand — the legitimate case and an account takeover look identical from the outside, so there is no safe automatic answer.
 
-### During the beta
+### Who can claim
 
-Claiming is limited to an allow-list while pkviewer is in beta. Viewing public pages is not limited and never will be.
+Anyone with a Discord account can sign in and claim a system, as long as they can show the system is theirs. There is no waiting list. Viewing public pages needs no account at all.
