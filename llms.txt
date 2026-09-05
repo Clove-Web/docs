@@ -1,3 +1,14 @@
 ﻿#  | Doughmination Docs
 
-- [Index](https://docs.doughmination.gay/index.md): Index
+> This is documentiation for my various projects and code.
+
+- [Welcome](https://docs.doughmination.gay/index.md): Welcome
+
+## Projects
+
+### Sandrone
+
+- [Sandrone](https://docs.doughmination.gay/projects/sandrone.md): Sandrone is a all-in-one Discord bot.
+- [Commands](https://docs.doughmination.gay/projects/sandrone/commands.md): Everything Sandrone answers to. All of them are slash commands, so Discord will fill in the options for you as you type.
+- [Terms of Service](https://docs.doughmination.gay/projects/sandrone/tos.md): Effective 31 August 2026
+- [Privacy Policy](https://docs.doughmination.gay/projects/sandrone/privacy.md): Effective 31 August 2026
