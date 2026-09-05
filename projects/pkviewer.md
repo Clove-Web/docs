@@ -45,6 +45,17 @@ You never have to hand pkviewer a PluralKit token to claim a system. See [*Claim
 2. Claim your system — usually automatic, see [*Claiming a system*](/projects/pkviewer/claiming).
 3. Choose an address and an appearance from [your management page](https://pkviewer.xyz/manage).
 
+### Open source
+
+pkviewer is open source under the [MIT licence](https://github.com/doughmination/pkviewer/blob/main/LICENSE), © 2026 Clove Twilight. You can read the source, run your own copy, or build something else from it.
+
+Two things the licence does not cover:
+
+- **The pkviewer name.** Run your own instance by all means; call it something else if you make it public.
+- **The relationship with PluralKit.** pkviewer is an independent third-party project, not affiliated with or endorsed by PluralKit — and anything built from this source is equally independent. If you run your own copy, say so on it too.
+
+The [data on your pages](/projects/pkviewer/privacy) belongs to you and to PluralKit, not to the licence. Nothing about the code being open changes what is public.
+
 ### Pages
 
 - [*Claiming a system*](/projects/pkviewer/claiming)
