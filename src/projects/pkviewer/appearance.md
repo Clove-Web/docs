@@ -40,4 +40,4 @@ Colour scheme is the one setting a member cannot override — a member page flip
 
 ### What you cannot do yet
 
-Custom CSS is planned but not in the beta. Neither are custom fonts beyond the built-in set, custom domains, or per-member logins. Typefaces come from a fixed list so that no page can pull a font from somewhere unexpected.
+There is no custom CSS, no custom fonts beyond the built-in set, no custom domains and no per-member logins. Typefaces come from a fixed list so that no page can pull a font from somewhere unexpected.
