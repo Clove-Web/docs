@@ -47,5 +47,3 @@ Your data on Discord itself is a separate matter, governed by [Discord's Privacy
 ### Changes
 If this policy changes, the effective date above changes with it, and the edit will be visible in the site's commit history.
 Contact
-
-Questions go to the support [Discord server](https://discord.gg/N8gCjS294R), [Matrix](https://matrix.to/#/#doughmination:matrix.org) or as an issue on the [bot's repository](https://github.com/doughmination/sandrone).
