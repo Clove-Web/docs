@@ -13,4 +13,12 @@
 - [Commands](https://docs.doughmination.gay/projects/sandrone/commands.md): Everything Sandrone answers to. All of them are slash commands, so Discord will fill in the options for you as you type.
 - [Terms of Service](https://docs.doughmination.gay/projects/sandrone/tos.md): Effective 31 August 2026
 - [Privacy Policy](https://docs.doughmination.gay/projects/sandrone/privacy.md): Effective 31 August 2026
+
+### pkviewer
+
+- [pkviewer](https://docs.doughmination.gay/projects/pkviewer.md): pkviewer turns a PluralKit system into a website.
+- [Claiming a system](https://docs.doughmination.gay/projects/pkviewer/claiming.md): Claiming a system on pkviewer lets you manage how it appears on the web. It is not ownership of the PluralKit system itself — PluralKit remains in charge of the identity and the data.
+- [Your public address](https://docs.doughmination.gay/projects/pkviewer/addresses.md): Every claimed system is public straight away, at its PluralKit ID:
+- [Appearance and layout](https://docs.doughmination.gay/projects/pkviewer/appearance.md): pkviewer separates two things that are easy to confuse:
+- [Privacy](https://docs.doughmination.gay/projects/pkviewer/privacy.md): pkviewer is a presentation layer over PluralKit. Most of what appears on a pkviewer page is not pkviewer's to begin with — it belongs to PluralKit, and pkviewer only shows what PluralKit already makes public.
 - [Doughmination Music](https://docs.doughmination.gay/projects/doughmination-music.md): Doughmination Music is a free public player.
