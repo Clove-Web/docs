@@ -9,10 +9,17 @@
 
 ### Sandrone
 
-- [Sandrone](https://docs.doughmination.gay/projects/sandrone.md): Sandrone is an all-in-one Discord bot.
+- [Sandrone](https://docs.doughmination.gay/projects/sandrone.md): Sandrone is an all-in-one Discord bot: lookups, text and developer tools, media embeds, pride flag avatars, YouTube downloads, and a handful of things that exist purely for fun.
 - [Commands](https://docs.doughmination.gay/projects/sandrone/commands.md): Everything Sandrone answers to. All of them are slash commands, so Discord will fill in the options for you as you type.
-- [Terms of Service](https://docs.doughmination.gay/projects/sandrone/tos.md): Effective 31 August 2026
-- [Privacy Policy](https://docs.doughmination.gay/projects/sandrone/privacy.md): Effective 31 August 2026
+- [Adding Sandrone](https://docs.doughmination.gay/projects/sandrone/setup.md): Sandrone can be added two different ways, and they are not the same thing.
+- [Official links](https://docs.doughmination.gay/projects/sandrone/official-links.md): Discord bots get impersonated. A copied avatar, a copied name and a link to somewhere that wants your password is a two-minute job, so this page is the reference for what the real Sandrone actually looks like and where it will actually send you.
+- [Hosted downloads](https://docs.doughmination.gay/projects/sandrone/downloads.md): /yt-dlp is the one command that leaves something on disk. This page explains exactly what, where, for how long, and who can reach it — because "the bot hosts a file for you" deserves more than a footnote.
+- [Pride flags](https://docs.doughmination.gay/projects/sandrone/flags.md): /pride wraps a pride flag around a profile picture. Thirty flags, two at once if you like, still or spinning, with enough knobs to get something that actually looks good rather than something that merely exists.
+- [Unit reference](https://docs.doughmination.gay/projects/sandrone/units.md): Every unit /convert knows, by category. Around 100 of them across 12 categories.
+- [Error messages](https://docs.doughmination.gay/projects/sandrone/errors.md): What Sandrone says when something goes wrong, and what it actually means. Most of these are the bot telling you something useful rather than falling over.
+- [Development](https://docs.doughmination.gay/projects/sandrone/development.md): How Sandrone is put together, and how to run it locally if you're contributing.
+- [Terms of Service](https://docs.doughmination.gay/projects/sandrone/tos.md): Effective 6 September 2026
+- [Privacy Policy](https://docs.doughmination.gay/projects/sandrone/privacy.md): Effective 6 September 2026
 
 ### pkviewer
 

@@ -1,5 +1,10 @@
 Custom CSS lets you style your pages by hand, from **Advanced CSS** in your system's management pages.
 
+There are two places to write it:
+
+- **Your system's** stylesheet, under Advanced CSS, applies to every page in your system.
+- **A member's own** stylesheet, from that member's management page, applies only to their page — layered *on top of* the system one, so a member starts from your look and changes what they want different.
+
 It is not quite the CSS you are used to. pkviewer does not serve what you type — it reads your stylesheet, keeps the parts it recognises, and writes out its own version. Anything it does not recognise is skipped and listed back to you with the line number, so a rule that was dropped never looks like a rule that did nothing.
 
 !!!secondary
@@ -70,14 +75,20 @@ Spacing steps `--sp-1` through `--sp-12` are also available, and scale with your
 
 ### What is not available
 
-Four things are refused. Each one is a specific problem rather than a general caution.
+Four things are restricted. Each one answers a specific problem rather than being a general caution.
 
-==- `url()` — no external resources
-Stylesheets make no network requests at all.
+==- `url()` — only three hosts
+A stylesheet can link to these and nowhere else:
 
-A background image is a request, and a request tells whoever hosts it the address of everyone who looked at your page. It is also how CSS is used to *read* a page: a selector that matches only certain content, paired with a request, reports back one character at a time.
+| Host | For |
+|---|---|
+| `fonts.googleapis.com` | Google Fonts stylesheets, via `@import` |
+| `fonts.gstatic.com` | the font files those stylesheets use |
+| `m.doughmination.gay` | the pkviewer CDN — images, fonts, anything static |
 
-Use colours, borders and gradients — `linear-gradient()` works fine.
+Anywhere else is refused. A request tells whoever hosts it the address of everyone who looked at your page, and it is also how CSS is used to *read* a page: a selector matching only certain content, paired with a request, reports back one character at a time. Restricting where requests can go means that technique has nowhere to send anything — the three hosts above are ones pkviewer already asks your visitors to contact, and nobody can read their logs.
+
+The host has to match exactly and be `https`. `https://fonts.googleapis.com.somewhere-else.com/` is a different host, and refused.
 ==- `position: absolute` and `fixed`
 Only `static` and `relative` are available.
 
@@ -92,13 +103,35 @@ Selectors naming `.pkvb` or `.site-footer` are refused.
 A [badge](/projects/pkviewer/badges) is pkviewer's statement about a system, and the notice is what stops a third-party site reading as an official one. Neither is part of your page's appearance. See [why badges cannot be faked](/projects/pkviewer/badges).
 ===
 
-`@media` and `@supports` both work. `@import`, `@font-face` and `@keyframes` do not — the first would pull in a stylesheet nobody checked, and the other two are on the list to look at later.
+`@media`, `@supports` and `@font-face` all work. `@keyframes` does not yet.
+
+`@import` works for `fonts.googleapis.com` only. It is the one thing pkviewer serves without reading first — the stylesheet that arrives is whatever Google returns — so it is locked to the single host that exists to return font stylesheets. Importing from the CDN is refused for the same reason: it serves arbitrary files, and an arbitrary file imported as a stylesheet would be rules that never met the compiler.
 
 Anything else not on the supported property list is skipped and reported, rather than applied.
 
 ### Fonts
 
-`font-family` accepts any name, but pkviewer only *loads* the typefaces in [Appearance](/projects/pkviewer/appearance). Naming a font that a visitor does not already have falls back to their default, so pick your typeface in Appearance and let CSS use `var(--pkv-font-body)`.
+The typefaces in [Appearance](/projects/pkviewer/appearance) are loaded for you; use `var(--pkv-font-body)` and `var(--pkv-font-heading)` to reach them.
+
+For anything else, load it yourself. The usual Google Fonts line works:
+
+```css
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap");
+
+.identity h1 { font-family: "Lora", Georgia, serif; }
+```
+
+Or point `@font-face` at a file on the CDN:
+
+```css
+@font-face {
+  font-family: "My Font";
+  src: url("https://m.doughmination.gay/fonts/myfont.woff2") format("woff2");
+  font-display: swap;
+}
+```
+
+A `@font-face` whose `src` is refused is dropped whole, rather than left naming a family it cannot supply. `font-family` on its own accepts any name, but a font nobody has installed simply falls back.
 
 ### A worked example
 
@@ -136,7 +169,7 @@ Anything else not on the supported property list is skipped and reported, rather
 The editor lists every skipped line underneath your stylesheet, with the reason. The commonest causes:
 
 - a property that is not on the supported list
-- `url()` anywhere in a value
+- a `url()` pointing somewhere other than the three hosts above
 - `!important`
 - a selector naming a badge or the site notice
 - `html`, `body` or `:root`

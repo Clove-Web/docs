@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.841970104921">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.842051696678">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -38,12 +38,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../media/favicon.png" />
-    <link href="../../../resources/css/retype.css?v=4.6.0.841970104921" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.6.0.842051696678" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.841970104921" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.842051696678" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.841970104921" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=4.6.0.841970104921" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.842051696678" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=4.6.0.842051696678" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -164,6 +164,11 @@
                 <!-- Page content  -->
 <h1 id="css-reference">CSS reference</h1>
 <p>Custom CSS lets you style your pages by hand, from <strong>Advanced CSS</strong> in your system&#x27;s management pages.</p>
+<p>There are two places to write it:</p>
+<ul>
+<li><strong>Your system&#x27;s</strong> stylesheet, under Advanced CSS, applies to every page in your system.</li>
+<li><strong>A member&#x27;s own</strong> stylesheet, from that member&#x27;s management page, applies only to their page — layered <em>on top of</em> the system one, so a member starts from your look and changes what they want different.</li>
+</ul>
 <p>It is not quite the CSS you are used to. pkviewer does not serve what you type — it reads your stylesheet, keeps the parts it recognises, and writes out its own version. Anything it does not recognise is skipped and listed back to you with the line number, so a rule that was dropped never looks like a rule that did nothing.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-secondary"></div>
@@ -362,13 +367,43 @@
 </doc-codeblock></div>
 <p>Spacing steps <code translate="no" v-pre>--sp-1</code> through <code translate="no" v-pre>--sp-12</code> are also available, and scale with your density setting.</p>
 <h3 id="what-is-not-available">What is not available</h3>
-<p>Four things are refused. Each one is a specific problem rather than a general caution.</p>
+<p>Four things are restricted. Each one answers a specific problem rather than being a general caution.</p>
 <doc-panels expando>
-   <doc-panel id="url--no-external-resources" collapsed>
-       <template #title><code translate="no" v-pre>url()</code> — no external resources</template>
-<p>Stylesheets make no network requests at all.</p>
-<p>A background image is a request, and a request tells whoever hosts it the address of everyone who looked at your page. It is also how CSS is used to <em>read</em> a page: a selector that matches only certain content, paired with a request, reports back one character at a time.</p>
-<p>Use colours, borders and gradients — <code translate="no" v-pre>linear-gradient()</code> works fine.</p>
+   <doc-panel id="url--only-three-hosts" collapsed>
+       <template #title><code translate="no" v-pre>url()</code> — only three hosts</template>
+<p>A stylesheet can link to these and nowhere else:</p>
+<retype-table copy-text="| Host | For |
+|---|---|
+| `fonts.googleapis.com` | Google Fonts stylesheets, via `@import` |
+| `fonts.gstatic.com` | the font files those stylesheets use |
+| `m.doughmination.gay` | the pkviewer CDN — images, fonts, anything static |">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Host</th>
+<th>For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code translate="no" v-pre>fonts.googleapis.com</code></td>
+<td>Google Fonts stylesheets, via <code translate="no" v-pre>@import</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>fonts.gstatic.com</code></td>
+<td>the font files those stylesheets use</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>m.doughmination.gay</code></td>
+<td>the pkviewer CDN — images, fonts, anything static</td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
+<p>Anywhere else is refused. A request tells whoever hosts it the address of everyone who looked at your page, and it is also how CSS is used to <em>read</em> a page: a selector matching only certain content, paired with a request, reports back one character at a time. Restricting where requests can go means that technique has nowhere to send anything — the three hosts above are ones pkviewer already asks your visitors to contact, and nobody can read their logs.</p>
+<p>The host has to match exactly and be <code translate="no" v-pre>https</code>. <code translate="no" v-pre>https://fonts.googleapis.com.somewhere-else.com/</code> is a different host, and refused.</p>
    </doc-panel>
    <doc-panel id="position-absolute-and-fixed" collapsed>
        <template #title><code translate="no" v-pre>position: absolute</code> and <code translate="no" v-pre>fixed</code></template>
@@ -386,10 +421,26 @@
 <p>A <a href="../badges/">badge</a> is pkviewer&#x27;s statement about a system, and the notice is what stops a third-party site reading as an official one. Neither is part of your page&#x27;s appearance. See <a href="../badges/">why badges cannot be faked</a>.</p>
    </doc-panel>
 </doc-panels>
-<p><code translate="no" v-pre>@media</code> and <code translate="no" v-pre>@supports</code> both work. <code translate="no" v-pre>@import</code>, <code translate="no" v-pre>@font-face</code> and <code translate="no" v-pre>@keyframes</code> do not — the first would pull in a stylesheet nobody checked, and the other two are on the list to look at later.</p>
+<p><code translate="no" v-pre>@media</code>, <code translate="no" v-pre>@supports</code> and <code translate="no" v-pre>@font-face</code> all work. <code translate="no" v-pre>@keyframes</code> does not yet.</p>
+<p><code translate="no" v-pre>@import</code> works for <code translate="no" v-pre>fonts.googleapis.com</code> only. It is the one thing pkviewer serves without reading first — the stylesheet that arrives is whatever Google returns — so it is locked to the single host that exists to return font stylesheets. Importing from the CDN is refused for the same reason: it serves arbitrary files, and an arbitrary file imported as a stylesheet would be rules that never met the compiler.</p>
 <p>Anything else not on the supported property list is skipped and reported, rather than applied.</p>
 <h3 id="fonts">Fonts</h3>
-<p><code translate="no" v-pre>font-family</code> accepts any name, but pkviewer only <em>loads</em> the typefaces in <a href="../appearance/">Appearance</a>. Naming a font that a visitor does not already have falls back to their default, so pick your typeface in Appearance and let CSS use <code translate="no" v-pre>var(--pkv-font-body)</code>.</p>
+<p>The typefaces in <a href="../appearance/">Appearance</a> are loaded for you; use <code translate="no" v-pre>var(--pkv-font-body)</code> and <code translate="no" v-pre>var(--pkv-font-heading)</code> to reach them.</p>
+<p>For anything else, load it yourself. The usual Google Fonts line works:</p>
+<div id="fonts-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-css"><code v-pre class="language-css">@import url(&quot;https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;display=swap&quot;);
+
+.identity h1 { font-family: &quot;Lora&quot;, Georgia, serif; }</code></pre>
+</doc-codeblock></div>
+<p>Or point <code translate="no" v-pre>@font-face</code> at a file on the CDN:</p>
+<div id="fonts-code-2" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-css"><code v-pre class="language-css">@font-face {
+  font-family: &quot;My Font&quot;;
+  src: url(&quot;https://m.doughmination.gay/fonts/myfont.woff2&quot;) format(&quot;woff2&quot;);
+  font-display: swap;
+}</code></pre>
+</doc-codeblock></div>
+<p>A <code translate="no" v-pre>@font-face</code> whose <code translate="no" v-pre>src</code> is refused is dropped whole, rather than left naming a family it cannot supply. <code translate="no" v-pre>font-family</code> on its own accepts any name, but a font nobody has installed simply falls back.</p>
 <h3 id="a-worked-example">A worked example</h3>
 <div id="a-worked-example-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-css"><code v-pre class="language-css">/* Softer cards with an accent edge */
@@ -423,7 +474,7 @@
 <p>The editor lists every skipped line underneath your stylesheet, with the reason. The commonest causes:</p>
 <ul>
 <li>a property that is not on the supported list</li>
-<li><code translate="no" v-pre>url()</code> anywhere in a value</li>
+<li>a <code translate="no" v-pre>url()</code> pointing somewhere other than the three hosts above</li>
 <li><code translate="no" v-pre>!important</code></li>
 <li>a selector naming a badge or the site notice</li>
 <li><code translate="no" v-pre>html</code>, <code translate="no" v-pre>body</code> or <code translate="no" v-pre>:root</code></li>

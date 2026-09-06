@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.841970104921">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.842051696678">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>Privacy Policy | Doughmination Docs</title>
     <meta name="title" content="Privacy Policy | Doughmination Docs">
-    <meta name="description" content="Effective 31 August 2026">
+    <meta name="description" content="Effective 6 September 2026">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.doughmination.gay/projects/sandrone/privacy/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.doughmination.gay/projects/sandrone/privacy/">
     <meta property="og:title" content="Privacy Policy | Doughmination Docs">
-    <meta property="og:description" content="Effective 31 August 2026">
+    <meta property="og:description" content="Effective 6 September 2026">
     <meta property="og:site_name" content="Doughmination Docs">
     <meta property="og:locale" content="en_US">
 
@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://docs.doughmination.gay/projects/sandrone/privacy/">
     <meta name="twitter:title" content="Privacy Policy | Doughmination Docs">
-    <meta name="twitter:description" content="Effective 31 August 2026">
+    <meta name="twitter:description" content="Effective 6 September 2026">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://docs.doughmination.gay/projects/sandrone/privacy.md">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../media/favicon.png" />
-    <link href="../../../resources/css/retype.css?v=4.6.0.841970104921" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.6.0.842051696678" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.841970104921" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.842051696678" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.841970104921" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.842051696678" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -163,62 +163,58 @@
                 <!-- Page content  -->
 <h1 id="privacy-policy">Privacy Policy</h1>
 <blockquote>
-<p>Effective 31 August 2026</p>
+<p>Effective 6 September 2026</p>
 </blockquote>
 <p>Sandrone is a personal, hobby Discord bot. It has no database, no analytics, and no user accounts. It writes two kinds of file to its host, neither of them about you, and this policy explains the little that does happen.</p>
 <h3 id="what-sandrone-stores-about-you">What Sandrone stores about you</h3>
-<p>Nothing. There is no database, no log of who ran what, and no profile kept on any user. The bot writes cog_state.json, which records which command modules the owner has switched off, and it writes the temporary media files described below. Neither contains user data of any kind: nothing links a stored file to the person who requested it.</p>
+<p>Nothing. There is no database, no log of who ran what, and no profile kept on any user. The bot writes <code translate="no" v-pre>cog_state.json</code>, which records which command modules the owner has switched off, and it writes the temporary media files described below. Neither contains user data of any kind: nothing links a stored file to the person who requested it.</p>
 <h3 id="hosted-downloads-yt-dlp">Hosted downloads (<code translate="no" v-pre>/yt-dlp</code>)</h3>
-<p>/yt-dlp fetches a YouTube link as a file. When the result is small enough it is attached to the reply and nothing is kept. When it is too big to attach, the file is saved on the bot&#x27;s host and the reply links to it instead.</p>
+<p><code translate="no" v-pre>/yt-dlp</code> fetches a YouTube link as a file. When the result is small enough it is attached to the reply and nothing is kept. When it is too big to attach, the file is saved on the bot&#x27;s host and the reply links to it instead.</p>
 <ul>
-<li>What is stored is the media file itself, the YouTube video or audio. It is not tagged with your name, your user ID, the server, or the time, and there is no index of who asked for what.</li>
+<li>What is stored is the media file itself, the YouTube video or audio. It is not tagged with your name, your user ID, the server, or the time, and there is no index of who asked for what. Alongside it sits a small record used for caching — the video&#x27;s ID, the format, the title, the resolution and the size — which likewise identifies no one.</li>
 <li>Each file lives in its own directory with a random, unguessable name. Anyone who has the link can download it while it exists; it is not otherwise listed or searchable.</li>
+<li>Files are served only from <code translate="no" v-pre>sandrone.doughmination.gay</code>. See <a href="../official-links/">Official links</a>.</li>
 <li>A sweep deletes each file once it is older than the retention window, 24 hours by default. Asking for the same video again while its copy still exists hands back the same link and restarts that 24-hour timer, so a file in active use is not swept out from under it; fetching the link directly does the same.</li>
 <li>The bot refuses to keep any single file larger than a configured cap (2 GiB by default), so one large pull cannot fill the host&#x27;s disk.</li>
 </ul>
-<p>If you would rather a download not sit on the host at all, keep it under your server&#x27;s attachment limit, or do not use the command.</p>
+<p>If you would rather a download not sit on the host at all, keep it under your server&#x27;s attachment limit, or do not use the command. <a href="../downloads/">Hosted downloads</a> covers the mechanics in full.</p>
 <h3 id="what-discord-sends-when-you-run-a-command">What Discord sends when you run a command</h3>
-<p>When you use a slash command, Discord delivers your user ID, your username, and whatever text you typed into the command&#x27;s options. Sandrone uses these in memory to build its reply and then discards them. They are not written down, not retained after the reply is sent, and not shared with anyone beyond the third parties listed below. The one thing that can outlast the reply is a hosted /yt-dlp file, covered above, and that is the media only, never your ID or the text you typed.
-Third-party services</p>
+<p>When you use a slash command, Discord delivers your user ID, your username, and whatever text you typed into the command&#x27;s options. Sandrone uses these in memory to build its reply and then discards them. They are not written down, not retained after the reply is sent, and not shared with anyone beyond the third parties listed below.</p>
+<p>The one thing that can outlast the reply is a hosted <code translate="no" v-pre>/yt-dlp</code> file, covered above, and that is the media only, never your ID or the text you typed.</p>
+<p>Sandrone does not have the message content intent. It cannot read your conversations — only what you type into a slash command&#x27;s options.</p>
+<h3 id="third-party-services">Third-party services</h3>
 <p>Some commands work by asking another service on your behalf. When you use one, the search term you typed is sent to that service, which has its own privacy policy and its own logs. Sandrone has no control over what they keep.</p>
 <ul>
-<li>
-<p>GitHub, which receives the username or repository you name in <code translate="no" v-pre>/github</code> and <code translate="no" v-pre>/repo</code>.</p>
-</li>
-<li>
-<p>Codeberg, which receives the username you name in <code translate="no" v-pre>/codeberg</code>.</p>
-</li>
-<li>
-<p>Wikipedia, which receives your search term from <code translate="no" v-pre>/wikipedia</code>.</p>
-</li>
-<li>
-<p>Urban Dictionary, which receives your search term from /urban-dictionary.</p>
-</li>
-<li>
-<p>PluralKit, which is linked by <code translate="no" v-pre>/snippet</code>&#x27;s plurality explainer, and which <code translate="no" v-pre>/pksystem</code> and <code translate="no" v-pre>/pkfront</code> query directly. Those two send the Discord ID of whoever they&#x27;re run on (you, or the user you name) to PluralKit&#x27;s API, to look up that account&#x27;s registered system.</p>
-</li>
-<li>
-<p>Pluralpedia, which is linked by <code translate="no" v-pre>/snippet</code>&#x27;s plurality explainer.</p>
-</li>
-<li>
-<p>girlcockx.com, which receives the post URL you give <code translate="no" v-pre>/tweet</code>, to build the embed.
--cataas, which serves the animal commands a random image, and receives nothing about you.</p>
-</li>
-<li>
-<p>m.doughmination.gay, the CDN that serves images and GIFs, which your Discord client fetches the way it fetches any embedded image.</p>
-</li>
+<li><strong>GitHub</strong>, which receives the username or repository you name in <code translate="no" v-pre>/github</code> and <code translate="no" v-pre>/repo</code>.</li>
+<li><strong>Codeberg</strong>, which receives the username you name in <code translate="no" v-pre>/codeberg</code>.</li>
+<li><strong>Wikipedia</strong>, which receives your search term from <code translate="no" v-pre>/wikipedia</code>.</li>
+<li><strong>Urban Dictionary</strong>, which receives your search term from <code translate="no" v-pre>/urban-dictionary</code>.</li>
+<li><strong>PluralKit</strong>, which is linked by <code translate="no" v-pre>/snippet</code>&#x27;s plurality explainer, and which <code translate="no" v-pre>/pksystem</code> and <code translate="no" v-pre>/pkfront</code> query directly. Those two send the Discord ID of whoever they&#x27;re run on (you, or the user you name) to PluralKit&#x27;s API, to look up that account&#x27;s registered system.</li>
+<li><strong>Pluralpedia</strong> and <strong>morethanone.info</strong>, which are linked by <code translate="no" v-pre>/snippet</code>&#x27;s plurality explainer.</li>
+<li><strong>girlcockx.com</strong>, which receives the post URL you give <code translate="no" v-pre>/tweet</code>, to build the embed.</li>
+<li><strong>Bluesky&#x27;s public API</strong>, which receives the handle and post ID you give <code translate="no" v-pre>/bluesky</code>. The resulting embed links to <strong>xsky.app</strong>.</li>
+<li><strong>WHOIS servers</strong>, which receive the domain or IP you give <code translate="no" v-pre>/whois</code>. The lookup starts at IANA and follows referrals to the registry and registrar for that name, so more than one operator sees the query. It never carries anything about you — WHOIS has no facility for it.</li>
+<li><strong>The Doughmination API</strong> (<code translate="no" v-pre>doughmination.uk</code>), which <code translate="no" v-pre>/profile</code> queries with the Discord ID of whoever the command is run on, and which <code translate="no" v-pre>/genshin</code> queries for the owner&#x27;s own game accounts.</li>
+<li><strong>The Argos Translate package index</strong>, which <code translate="no" v-pre>/translate</code> contacts to list and download language models. The translation itself runs locally on the bot&#x27;s host — the text you type is <strong>not</strong> sent to a translation service.</li>
+<li><strong>cataas</strong>, which serves <code translate="no" v-pre>/kitty</code> a random image and receives nothing about you.</li>
+<li><strong>m.doughmination.gay</strong>, the CDN that serves images and GIFs, which your Discord client fetches the way it fetches any embedded image.</li>
 </ul>
-<p>One thing worth being explicit about: <code translate="no" v-pre>/stats</code> calls ip-api.com to report where the bot&#x27;s own server is hosted. It never sends your IP address, and it cannot, because the bot does not have it.</p>
+<p>One thing worth being explicit about: <code translate="no" v-pre>/stats</code> calls <strong>ip-api.com</strong> to report where the bot&#x27;s own server is hosted. It never sends your IP address, and it cannot, because the bot does not have it. The result is cached until the next restart, so it is asked at most once per run of the bot.</p>
 <h3 id="logs">Logs</h3>
-<p>When a command fails, the bot prints the command&#x27;s name and the error text to its own console on the host machine. That output can include a search term you passed if the term is what caused the error. It is not stored long-term, not published, and not linked to your account. Nothing else is logged.</p>
+<p>When a command fails, the bot prints the command&#x27;s name and the error text to its own console on the host machine. That output can include a search term you passed if the term is what caused the error. It is not stored long-term, not published, and not linked to your account.</p>
+<p>The console also records module loads and unloads, and the count of expired downloads removed by each sweep. Neither mentions a user. Nothing else is logged.</p>
 <h3 id="age-restricted-commands">Age-restricted commands</h3>
 <p>A small number of commands are marked age-restricted. Discord itself decides who may run them and where, based on your account age setting and the channel&#x27;s rating. Sandrone does not record who used them.</p>
+<h3 id="children">Children</h3>
+<p>Sandrone is used through Discord, which requires its users to be at least 13, or older where local law says so. It is not directed at children, and since it collects nothing, it holds no children&#x27;s data to speak of.</p>
 <h3 id="your-rights">Your rights</h3>
-<p>Because nothing about you is stored, there is nothing to export, correct, or delete, so a deletion request would have no data to act on. If you would like to check that for yourself, the entire bot is open source and linked at the bottom of this page.</p>
+<p>Because nothing about you is stored, there is nothing to export, correct, or delete, so a deletion request would have no data to act on. If you would like to check that for yourself, the bot&#x27;s entire source is public and linked at the bottom of this page.</p>
 <p>Your data on Discord itself is a separate matter, governed by <a href="https://discord.com/privacy">Discord&#x27;s Privacy Policy</a>.</p>
 <h3 id="changes">Changes</h3>
-<p>If this policy changes, the effective date above changes with it, and the edit will be visible in the site&#x27;s commit history.
-Contact</p>
+<p>If this policy changes, the effective date above changes with it, and the edit will be visible in the site&#x27;s commit history.</p>
+<h3 id="contact">Contact</h3>
+<p>Questions about this policy, or anything else privacy-related: email <code translate="no" v-pre>admin@doughmination.win</code>, or ask in the <a href="https://discord.gg/N8gCjS294R">support server</a>.</p>
+<p>The source is at <a href="https://github.com/doughmination/sandrone">github.com/doughmination/sandrone</a>, and every claim on this page can be checked against it.</p>
 
                 
                 <!-- Required only on API pages -->
