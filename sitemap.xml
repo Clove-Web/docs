@@ -4,10 +4,10 @@
     <loc>https://docs.doughmination.gay/</loc>
   </url>
   <url>
-    <loc>https://docs.doughmination.gay/faq/</loc>
+    <loc>https://docs.doughmination.gay/projects/pkviewer/</loc>
   </url>
   <url>
-    <loc>https://docs.doughmination.gay/projects/pkviewer/</loc>
+    <loc>https://docs.doughmination.gay/faq/</loc>
   </url>
   <url>
     <loc>https://docs.doughmination.gay/projects/sandrone/</loc>
@@ -25,18 +25,21 @@
     <loc>https://docs.doughmination.gay/projects/pkviewer/badges/</loc>
   </url>
   <url>
+    <loc>https://docs.doughmination.gay/projects/pkviewer/appearance/</loc>
+  </url>
+  <url>
     <loc>https://docs.doughmination.gay/projects/pkviewer/addresses/</loc>
+  </url>
+  <url>
+    <loc>https://docs.doughmination.gay/projects/pkviewer/css/</loc>
   </url>
   <url>
     <loc>https://docs.doughmination.gay/projects/doughmination-music/</loc>
   </url>
   <url>
-    <loc>https://docs.doughmination.gay/projects/pkviewer/appearance/</loc>
+    <loc>https://docs.doughmination.gay/projects/pkviewer/privacy/</loc>
   </url>
   <url>
     <loc>https://docs.doughmination.gay/projects/pkviewer/claiming/</loc>
-  </url>
-  <url>
-    <loc>https://docs.doughmination.gay/projects/pkviewer/privacy/</loc>
   </url>
 </urlset>

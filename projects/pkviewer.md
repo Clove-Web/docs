@@ -61,5 +61,6 @@ The [data on your pages](/projects/pkviewer/privacy) belongs to you and to Plura
 - [*Claiming a system*](/projects/pkviewer/claiming)
 - [*Your public address*](/projects/pkviewer/addresses)
 - [*Appearance and layout*](/projects/pkviewer/appearance)
+- [*CSS reference*](/projects/pkviewer/css)
 - [*Badges*](/projects/pkviewer/badges)
 - [*Privacy*](/projects/pkviewer/privacy)

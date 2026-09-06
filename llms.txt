@@ -21,5 +21,6 @@
 - [Your public address](https://docs.doughmination.gay/projects/pkviewer/addresses.md): Every claimed system is public straight away, at its PluralKit ID:
 - [Appearance and layout](https://docs.doughmination.gay/projects/pkviewer/appearance.md): pkviewer separates two things that are easy to confuse:
 - [Badges and credits](https://docs.doughmination.gay/projects/pkviewer/badges.md): pkviewer has two ways of recognising people, and they are separate on purpose.
+- [CSS reference](https://docs.doughmination.gay/projects/pkviewer/css.md): Custom CSS lets you style your pages by hand, from Advanced CSS in your system's management pages.
 - [Privacy](https://docs.doughmination.gay/projects/pkviewer/privacy.md): pkviewer is a presentation layer over PluralKit. Most of what appears on a pkviewer page is not pkviewer's to begin with — it belongs to PluralKit, and pkviewer only shows what PluralKit already makes public.
 - [Doughmination Music](https://docs.doughmination.gay/projects/doughmination-music.md): Doughmination Music is a free public player.

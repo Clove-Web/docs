@@ -15,6 +15,7 @@ A badge is given by pkviewer. You cannot set one on yourself, and neither can an
 | **Girlfriend** | The owner's girlfriend. |
 | **Friend** | A friend of the project. |
 | **Bug Hunter** | Found and reported a bug. |
+| **EA Bug Hunter** | Found and reported a bug during early access. |
 | **Security Researcher** | Reported a security vulnerability responsibly. |
 | **Contributor** | Contributed to pkviewer. |
 
@@ -24,17 +25,18 @@ More can be added over time. The current list is always on [pkviewer.xyz/badges]
 The **PK Dev** badge recognises someone who works on PluralKit. It is pkviewer's way of saying who they are — it is not a statement by PluralKit, and it does not mean PluralKit is involved in pkviewer. pkviewer remains an independent third-party project, not affiliated with or endorsed by PluralKit.
 !!!
 
-### You decide whether it shows
+### You decide whether it stays
 
-Being given a badge does not put it on your page. It arrives as an offer, and nothing appears until you accept it.
+A badge appears on your page as soon as it is given, and you turn it off if you would rather not have it. You do not need to do anything to accept one.
 
-That is deliberate. A badge says something about you to everyone who visits your page — a relationship, or that you found a security problem — and not everyone wants either of those made public. So:
+A badge says something about you to everyone who visits your page — a relationship, or that you found a security problem — and not everyone wants either of those public. So removing one is one click, from your system's management page:
 
-- **Accept** and it appears on your system page.
-- **Decline** and it does not. You can change your mind later.
-- **Hide** one you accepted earlier. A hidden badge looks exactly like one that was never given; nobody can tell there is something to ask about.
+- **Turn off** and it goes. You can put it back at any time.
+- **Hide** does the same thing and is just as reversible.
 
-You will find these on your system's management page.
+Either way, a badge that is not showing looks exactly like one that was never given. Nobody can tell there is something to ask about.
+
+Nothing is required of you to be given one — you do not need a pkviewer account, and a badge can be given to any PluralKit system. If one is on your page and you would rather it were not, and you have not claimed your system, [ask](/faq) and it will be removed.
 
 **PK Dev is the one exception.** It appears without waiting, and it can be given to a PluralKit developer who has no pkviewer account at all — otherwise it would be a badge that never shows, and being recognised would mean signing up to a third-party site first. It is still yours to remove: claim your system and Decline works exactly as it does for any other badge, or [ask](/faq) and it will be taken off. Every other badge waits for you.
 
