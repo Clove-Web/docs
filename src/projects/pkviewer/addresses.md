@@ -1,6 +1,7 @@
 ---
 order: 90
 label: Your public address
+icon: link
 ---
 
 Every claimed system is public straight away, at its PluralKit ID:

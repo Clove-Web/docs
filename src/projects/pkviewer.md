@@ -1,6 +1,7 @@
 ---
 order: 900
 label: pkviewer
+icon: ../media/pkviewer.svg
 ---
 
 pkviewer turns a [*PluralKit*](https://pluralkit.me) system into a website.

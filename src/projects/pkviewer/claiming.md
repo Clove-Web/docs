@@ -1,6 +1,7 @@
 ---
 order: 100
 label: Claiming a system
+icon: key
 ---
 
 Claiming a system on pkviewer lets you manage how it appears on the web. It is not ownership of the PluralKit system itself — PluralKit remains in charge of the identity and the data.

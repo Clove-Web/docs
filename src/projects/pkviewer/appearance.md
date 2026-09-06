@@ -1,6 +1,7 @@
 ---
 order: 80
 label: Appearance and layout
+icon: paintbrush
 ---
 
 pkviewer separates two things that are easy to confuse:

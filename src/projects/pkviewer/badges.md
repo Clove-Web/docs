@@ -1,6 +1,7 @@
 ---
 order: 70
 label: Badges and credits
+icon: star
 ---
 
 pkviewer has two ways of recognising people, and they are separate on purpose.
